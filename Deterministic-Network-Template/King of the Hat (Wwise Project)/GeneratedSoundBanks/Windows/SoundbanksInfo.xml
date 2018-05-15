@@ -30,12 +30,16 @@
 				<Event Id="3857355556" Name="Fastfall" ObjectPath="\Events\Default Work Unit\General\Fastfall"/>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\General\Footsteps"/>
 				<Event Id="2669862114" Name="Footstool" ObjectPath="\Events\Default Work Unit\General\Footstool"/>
-				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\General\Hit" MaxAttenuation="0.000000"/>
 				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\General\Land"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\General\Pickup" MaxAttenuation="0.000000"/>
+				<Event Id="3831688773" Name="PlayerHit" ObjectPath="\Events\Default Work Unit\General\PlayerHit"/>
 				<Event Id="2754516227" Name="Wallride" ObjectPath="\Events\Default Work Unit\General\Wallride"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="79572315" Language="SFX">
+					<ShortName>BANK_00_INSTR_0000_SND_001D.wav</ShortName>
+					<Path>SFX\BANK_00_INSTR_0000_SND_001D_1C9C67B2.wem</Path>
+				</File>
 				<File Id="142752072" Language="SFX">
 					<ShortName>[Flinthook] Footstep1.wav</ShortName>
 					<Path>SFX\[Flinthook] Footstep1_1C9C67B2.wem</Path>
@@ -43,6 +47,10 @@
 				<File Id="192256100" Language="SFX">
 					<ShortName>[Flinthook] Land1.wav</ShortName>
 					<Path>SFX\[Flinthook] Land1_23862461.wem</Path>
+				</File>
+				<File Id="389540621" Language="SFX">
+					<ShortName>BT WHOOSH Belt.wav</ShortName>
+					<Path>SFX\BT WHOOSH Belt_50B85614.wem</Path>
 				</File>
 				<File Id="447533716" Language="SFX">
 					<ShortName>[N++] Wallslide.wav</ShortName>

@@ -22,9 +22,9 @@ namespace AK
         static const AkUniqueID FASTFALL = 3857355556U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FOOTSTOOL = 2669862114U;
-        static const AkUniqueID HIT = 1116398592U;
         static const AkUniqueID LAND = 674522502U;
         static const AkUniqueID PICKUP = 3978245845U;
+        static const AkUniqueID PLAYERHIT = 3831688773U;
         static const AkUniqueID WALLRIDE = 2754516227U;
     } // namespace EVENTS
 
