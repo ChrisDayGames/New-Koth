@@ -91,13 +91,14 @@ public class GameController : MonoBehaviour{
 	private static Systems CreateLogicSystems (Contexts contexts) {
 
 		return new Feature ("Logic Systems")
+
 			.Add (new TimeSystems (contexts))
 			.Add (new MoveSimulationSystem (contexts))
 			.Add (new InputHistorySystem (contexts))
+            .Add(new InputEventSystems(contexts))
 			.Add (new TimeEventSystems (contexts))
 			.Add (new MetaEventSystems (contexts))
-			.Add (new LogicEventSystems (contexts));
-		
+            .Add (new LogicEventSystems (contexts));
 	}
 
 	// add an id to every entity as it's created

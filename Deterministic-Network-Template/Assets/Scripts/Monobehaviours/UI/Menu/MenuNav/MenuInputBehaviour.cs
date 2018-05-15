@@ -33,8 +33,8 @@ public abstract class MenuInputBehaviour : ManagedBehaviour, IControllerInputLis
 	public virtual void OnControllerInput (InputEntity e, InputSnapshot s) {
 
         if (!this.gameObject.activeInHierarchy) return;
-		if (e.id.value != playerId) return;
-
+        if (e.controllerID.id != playerId && playerId >= 0) return;
+        
         //handle axis movement from the player
         Move(
             s.GetAxis(Axes.MoveHorizontal).ToFloat(),

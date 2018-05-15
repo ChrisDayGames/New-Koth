@@ -141,6 +141,7 @@ public class PlayerBox : InputEventPlanner, IGeneratable {
 	}
 
     void SelectCharacter() {
+        Debug.Log(cursor.currentTarget.name);
         currentCharacter = cursor.currentTarget.GetComponent<CharacterBox>().character;
 		CharacterBlueprint blueprint = Assets.Get (currentCharacter);
 
