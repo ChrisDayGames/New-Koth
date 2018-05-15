@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f603ba1ef51cff4aa6f83fea6def15c, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - Guid: '{F7805120-B834-474A-9E58-87E9739FCAE6}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    List: []
+  autoPopulateEnabled: 1
+  AuxBusWwu:
+  - Guid: '{756CF166-13D7-4A74-AB0E-D25C56887E72}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{F7EE1753-A42C-46CB-A73B-A7D8388684E6}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks\Default Work Unit.wwu
+    List:
+    - Guid: 63c88f350c09f345956dde9037cad09d
+      ID: -1133058374
+      Name: Main
+      Path: Default Work Unit\Main
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+  basePath: Audio\GeneratedSoundBanks
+  callbackManagerBufferSize: 4
+  CurrentPluginConfig: 
+  defaultPoolSize: 4096
+  EventWwu:
+  - Guid: '{D54A2CC7-11F2-43C4-8345-680DF97948B6}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: Events\Default Work Unit.wwu
+    List:
+    - Guid: 0697be3090057c40a0fc24bcc40e3f92
+      ID: -63808526
+      Name: BirthdayDash
+      Path: Default Work Unit\BirthdayDash
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayDash
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2879c8f6e5cc474bb8167f0e381f1283
+      ID: 716984660
+      Name: BirthdayDeath
+      Path: Default Work Unit\BirthdayDeath
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayDeath
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: dcc2a7079eafc240a40775414c589ffa
+      ID: -768865273
+      Name: BirthdayFastfall
+      Path: Default Work Unit\BirthdayFastfall
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayFastfall
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: db833fedbae7174bbfbd08a43a4fc907
+      ID: -2121579217
+      Name: BirthdayFootsteps
+      Path: Default Work Unit\BirthdayFootsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayFootsteps
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e88ed49ed01404418f56dab9471b40b4
+      ID: -1736679573
+      Name: BirthdayFootstool
+      Path: Default Work Unit\BirthdayFootstool
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayFootstool
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: aaab39811c8ef94290d68711ca158545
+      ID: 1992502354
+      Name: BirthdayJump
+      Path: Default Work Unit\BirthdayJump
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayJump
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 7dc1d5317763b54c8ade6e5e3c8f2d94
+      ID: 2046654741
+      Name: BirthdayLand
+      Path: Default Work Unit\BirthdayLand
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayLand
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: bac673ac8e0a9244af4ce3c81c18794c
+      ID: 445595402
+      Name: BirthdayThrow
+      Path: Default Work Unit\BirthdayThrow
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayThrow
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 39ecafb24869e844b2b03b8acac8b2b6
+      ID: -1227839336
+      Name: BirthdayWin
+      Path: Default Work Unit\BirthdayWin
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirthdayWin
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /King of the Hat
+  - /King of the Hat/SoundBanks
+  - /King of the Hat/SoundBanks/Default Work Unit
+  language: English(US)
+  lowerPoolSize: 2048
+  m_lastPopulateTimePart2: 0
+  m_lastPopulateTimePsrt1: 0
+  memoryCutoffThreshold: 0.95
+  preparePoolSize: 0
+  RtpcWwu:
+  - Guid: '{A75E9DF7-4100-411A-8C54-CB7798030089}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters\Default Work Unit.wwu
+    List: []
+  StateWwu:
+  - Guid: '{5373460D-A4BD-4D47-9DBF-A9DA4DB71DD1}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: States\Default Work Unit.wwu
+    List: []
+  streamingPoolSize: 1024
+  SwitchWwu:
+  - Guid: '{DBA7275C-6FAD-4743-85CB-96CE56E7BA5D}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: Switches\Default Work Unit.wwu
+    List: []
+  TriggerWwu:
+  - Guid: '{9B6382B4-71CA-46DF-BB91-F5769A0263A1}'
+    m_lastTimePart2: -1999260428
+    m_lastTimePsrt1: 852186880
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers\Default Work Unit.wwu
+    List: []

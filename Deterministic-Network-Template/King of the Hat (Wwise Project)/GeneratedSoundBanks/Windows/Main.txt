@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	445595402	BirthdayThrow			\Default Work Unit\BirthdayThrow	
+	716984660	BirthdayDeath			\Default Work Unit\BirthdayDeath	
+	1992502354	BirthdayJump			\Default Work Unit\BirthdayJump	
+	2046654741	BirthdayLand			\Default Work Unit\BirthdayLand	
+	2173388079	BirthdayFootsteps			\Default Work Unit\BirthdayFootsteps	
+	2558287723	BirthdayFootstool			\Default Work Unit\BirthdayFootstool	
+	3067127960	BirthdayWin			\Default Work Unit\BirthdayWin	
+	3526102023	BirthdayFastfall			\Default Work Unit\BirthdayFastfall	
+	4231158770	BirthdayDash			\Default Work Unit\BirthdayDash	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	905943468	12	C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\12_9384330C.wem		\Actor-Mixer Hierarchy\Default Work Unit\12		16492
+

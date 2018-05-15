@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b015c55ab9e497fb63d01d0e963304, type: 3}
+  m_Name: Random
+  m_EditorClassIdentifier: 
+  uiInfo:
+    isUnlocked: 1
+    isHidden: 0
+    smallSprite: {fileID: 21300000, guid: 16bbdf8e3c28b88479aff3ad36c3680e, type: 3}
+    bigSprite: {fileID: 21300000, guid: 16bbdf8e3c28b88479aff3ad36c3680e, type: 3}
+    logo: {fileID: 21300000, guid: aa40ebda1d37642a8a3e256275b38fab, type: 3}
+  player: {fileID: 1324016074548714, guid: 7ac475beaee2c4275a69800bca9e0a59, type: 2}
+  hat: {fileID: 1538014574704536, guid: 6ad70edfc68db4a098b451e95282827d, type: 2}
+  mask: 0
+  tag: 2
+  checkAgainst: 0
+  groundSpeed: 983040
+  groundAcceleration: 786
+  weightFactor: 65536
+  airSpeed: 983040
+  airAcceleration: 6553
+  hatlessMoveBonus: 0
+  hatlessJumpBonus: 0
+  hoverMoveBonusX: 0
+  hoverMoveBonusY: 0
+  dashSpeed: 1966080
+  dashAcceleration: 3276
+  dashLength: 4587
+  timeToJumpApex: 31457
+  minJump: 98304
+  maxJump: 589824
+  bounceHeight: 393216
+  jumpsAllowed: 2
+  fastFallFactor: 20
+  terminalVelocity: 2621440
+  terminalVelocityFastFall: 2949120
+  innerJump:
+    rawX: 1310720
+    rawY: 1966080
+  neutralJump:
+    rawX: 1966080
+    rawY: 1638400
+  outerJump:
+    rawX: 1966080
+    rawY: 1638400
+  maxSlideSpeed: 524288
+  fastSlideFactor: 3
+  reflectionDampPlayer:
+    rawX: 19660
+    rawY: 19660
+  gravity: 9830
+  normalFriction: 58982
+  dangerousFriction: 58982
+  normalDrag: 13107
+  dangerousDrag: 13107
+  reflectionDampHat:
+    rawX: 45875
+    rawY: 45875
+  throwPower: 524288
+  blowBack: 3276800
+  stunTime: 21626
+  followSpeed: 1310720
+  maxRotation: 3276800
+  playerColOffsetPosition:
+    rawX: 0
+    rawY: -3276
+  playerColScale:
+    rawX: 54394
+    rawY: 81920
+  followPoint:
+    rawX: 0
+    rawY: 49152
+  pickUpRadius: 262144
+  hatColOffsetPosition:
+    rawX: 0
+    rawY: 32768
+  hatColScale:
+    rawX: 55705
+    rawY: 44564

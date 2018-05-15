@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4231158770" Name="BirthdayDash" ObjectPath="\Events\Default Work Unit\BirthdayDash"/>
+				<Event Id="716984660" Name="BirthdayDeath" ObjectPath="\Events\Default Work Unit\BirthdayDeath"/>
+				<Event Id="3526102023" Name="BirthdayFastfall" ObjectPath="\Events\Default Work Unit\BirthdayFastfall"/>
+				<Event Id="2173388079" Name="BirthdayFootsteps" ObjectPath="\Events\Default Work Unit\BirthdayFootsteps"/>
+				<Event Id="2558287723" Name="BirthdayFootstool" ObjectPath="\Events\Default Work Unit\BirthdayFootstool"/>
+				<Event Id="1992502354" Name="BirthdayJump" ObjectPath="\Events\Default Work Unit\BirthdayJump"/>
+				<Event Id="2046654741" Name="BirthdayLand" ObjectPath="\Events\Default Work Unit\BirthdayLand"/>
+				<Event Id="445595402" Name="BirthdayThrow" ObjectPath="\Events\Default Work Unit\BirthdayThrow"/>
+				<Event Id="3067127960" Name="BirthdayWin" ObjectPath="\Events\Default Work Unit\BirthdayWin"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="905943468" Language="SFX">
+					<ShortName>12.wav</ShortName>
+					<Path>SFX\12_9384330C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

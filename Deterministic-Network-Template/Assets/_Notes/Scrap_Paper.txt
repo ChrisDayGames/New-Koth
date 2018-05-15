@@ -1,0 +1,109 @@
+
+ Priority
+
+
+ Fix Birthday Bullshit (Wallsliding animation always fucks up)
+
+ Fix Level Collision Conversion (Rectilinear Decomposer)
+ Second pass on colliders (make it easy to pass events)
+ Grow to Component Vector 3 size, int frames
+
+ Change camera shake to check collisions instead
+ Have level check for collision
+ Add level tag
+
+ Upload all the different environments
+
+ Level Editor can Accept a Level name
+ Set up level select screen logic
+
+
+ Auto destroy anything out of world
+
+
+
+
+
+ Second Priority
+
+ Level Creation script is a bit slow
+
+
+ Complete?
+
+ Destroy on the render textures
+ mesh jiggler use indexes instead of iteration
+ listener on collision info
+ listener on generic inputs
+ Remove all view reactive systems
+ Player selection should not be an array of selections (use unique entity index)
+ Implement audio
+ Debug Draw Colliders
+ change jiggly to hashset instead of dictionary
+ Larger pickup radius
+ Can save any number of levels
+
+
+
+ Weekly Goals
+
+ Week 1
+	
+	Make game fun again (Just Bday)
+
+Week 2
+	
+	Train chris on Entitas Listeners
+	Add growing + shrinking colliders
+	Add hover
+	Add Armour
+	Add Multithrow
+	Add footstool vfx
+	Add boost for cpt hat
+	Add jigglymesh
+	Begin Testing new characters
+
+Week 3
+	
+	Choose Character
+	Choose Level
+	Begin Game
+	Count Scores
+	End Rounds
+	End Games
+	Create End Screen Data
+	Game Loop
+	Playtest
+
+Week 4
+	
+	Polish Everything from last 3 weeks
+
+Week 5
+	
+	Release First Test
+
+	Build Assets For Trailer
+
+
+
+
+
+
+
+
+
+
+
+
+ Bresenhams line drawing algorithm
+
+ Cheat the camera in
+
+
+ Remove all useless shit from the project
+
+
+ Replay / Network / Input should all come the scene -->> use box updates?
+
+ Give option for fixed update and update scripts

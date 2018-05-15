@@ -1,0 +1,16 @@
+﻿public enum MenuState {
+
+    NONE,
+    INTRO,
+	MAIN,
+    MODE_SELECT,
+	CHAR_SELECT,
+    LEVEL_SELECT,
+    TROPHIES,
+    CREATION,
+	OPTIONS,
+	PAUSE,
+	REPLAY,
+	END
+
+}

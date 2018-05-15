@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b015c55ab9e497fb63d01d0e963304, type: 3}
+  m_Name: Washing Machine
+  m_EditorClassIdentifier: 
+  uiInfo:
+    isUnlocked: 1
+    isHidden: 0
+    smallSprite: {fileID: 21300000, guid: f658a1bd2d2b8fd43b6dc310d4f557d6, type: 3}
+    bigSprite: {fileID: 21300000, guid: b33409a4547e7494ba163a4c5f382057, type: 3}
+    logo: {fileID: 21300000, guid: 9fcb7d8820a214da0b36d13af68dbba0, type: 3}
+  player: {fileID: 1324016074548714, guid: d50694bcacd17435d9e9cde1c3d163ab, type: 2}
+  hat: {fileID: 1324016074548714, guid: 3f945c398d32a48d79b03746cc56c490, type: 2}
+  mask: 0
+  tag: 0
+  checkAgainst: 0
+  groundSpeed: 327680
+  groundAcceleration: 786
+  weightFactor: 32768
+  airSpeed: 983040
+  airAcceleration: 655
+  hatlessMoveBonus: 0
+  hatlessJumpBonus: 0
+  hoverMoveBonusX: 0
+  hoverMoveBonusY: 0
+  dashSpeed: 1966080
+  dashAcceleration: 655
+  dashLength: 4587
+  timeToJumpApex: 29491
+  minJump: 98304
+  maxJump: 589824
+  bounceHeight: 393216
+  jumpsAllowed: 3
+  fastFallFactor: 15
+  terminalVelocity: 3276800
+  terminalVelocityFastFall: 5242880
+  innerJump:
+    rawX: 1310720
+    rawY: 1966080
+  neutralJump:
+    rawX: 1966080
+    rawY: 1638400
+  outerJump:
+    rawX: 1966080
+    rawY: 1638400
+  maxSlideSpeed: 655360
+  fastSlideFactor: 4
+  reflectionDampPlayer:
+    rawX: 45875
+    rawY: 45875
+  gravity: 6553
+  normalFriction: 32768
+  dangerousFriction: 32768
+  normalDrag: 6553
+  dangerousDrag: 6553
+  reflectionDampHat:
+    rawX: 45875
+    rawY: 45875
+  throwPower: 655360
+  blowBack: 3932160
+  stunTime: 22937
+  followSpeed: 1310720
+  maxRotation: 655360
+  playerColOffsetPosition:
+    rawX: 0
+    rawY: -20316
+  playerColScale:
+    rawX: 131072
+    rawY: 98304
+  followPoint:
+    rawX: 0
+    rawY: 0
+  pickUpRadius: 262144
+  hatColOffsetPosition:
+    rawX: 0
+    rawY: 0
+  hatColScale:
+    rawX: 117964
+    rawY: 39321

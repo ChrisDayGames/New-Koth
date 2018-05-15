@@ -1,0 +1,116 @@
+
+BUG LIST
+
+//Ben
+
+Wwise bank doesn't load
+
+
+
+//Chris
+
+
+Put a particle in front of the hat when it is sliding on the ground
+
+
+
+//Soc
+If you jump directly next to someone, it turns you around (probably wall riding on them?)
+
+
+==============
+Bugs + Warnings
+==============
+
+level editor
+	make a base class for all buttons
+	undo function is fucking stupid
+	load empty file breaks game
+
+
+Dont wallride on hats
+Jumping under a hat triggers ceiling slowdown
+
+Minimum is All Fucked UP
+	Min Jump Height Control
+
+Birthday followspeed to 50 is wack
+
+Zoe Shimmy Doesnt Work
+
+Gradient on Wallride terminal velocity
+
+Hold B Attack in 2 places, weird
+
+Player gets stuck on floor corners sometimes
+
+Jumps Completed / Jumps Allowed should be int
+
+Shadow doesnt work without colliders (Unity Colliders)
+
+Hat invincible effect gets overriden when it touches the ground
+
+
+==============
+TO DO
+==============
+
+Binary Search On PolygonColliders
+Add through platform hat check
+
+Simplify Collision Commands
+have a list of collision commands
+
+Bouncing + Fast Fall is Worse (should be same as before but no jump canceling
+
+
+push system should be slower when object is heavy
+add constrain position system
+
+
+Commands in general should not use System.Type
+	Clone Function in Command
+	Hover Command
+	Multi Throw Command
+
+
+squash on footstool
+	how to trigger timed FX 
+
+
+state based collider sizes
+collider target size + interpolation + collisioncheck on interpolation
+Hat Grow
+
+Auto destroy anything out of world
+
+
+==============
+Nice to Have
+==============
+
+Color over time for danger
+Respawn Timers
+
+
+==============
+PURE ART
+==============
+
+Widen floors
+3d Backgrounds
+
+
+==============
+Menus
+==============
+
+Everything gets fucked if screens are off
+
+==============
+Tools
+==============
+
+Show particles in Inspector with Characters
+Color Swap Builder
+Show Colliders / Gizmos

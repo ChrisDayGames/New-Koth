@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5cf723d6140472da01a10136a11b11, type: 3}
+  m_Name: Clouds
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: a75c0dfa88a664e2ebd40d96b9ceb8a6, type: 3}
+  mat: {fileID: 2100000, guid: 9a9f012a80e9743d78ea3c0e460839e1, type: 2}
+  skybox: {fileID: 1808388768703680, guid: a2bfdffa11fc4462e8dfb63cccc1e528, type: 2}
+  spawnPoints:
+  - position:
+      rawX: -2031616
+      rawY: 786432
+  - position:
+      rawX: 2031616
+      rawY: 786432
+  - position:
+      rawX: -1572864
+      rawY: -786432
+  - position:
+      rawX: 1572864
+      rawY: -786432

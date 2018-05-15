@@ -1,0 +1,37 @@
+
+CHANGE LOG
+
+
+
+//NEW SYSTEM NEW SYSTEM NEW SYSTEM NEW SYSTEM NEW SYSTEM NEW SYSTEM NEW SYSTEM NEW SYSTEM 
+
+Version 2.0
+-
+
+
+==============
+New Features
+==============
+
+Wallride while going up
+Pickup on Collision and on range
+Hatthrow no longer the wrong way when wall riding
+Minimum Jump Height
+No Gradient on Wall Slide
+
+Actions have priority
+
+Camera Shake can Rotate + Smooth
+
+
+
+
+
+//OLD SYSTEM OLD SYSTEM OLD SYSTEM OLD SYSTEM OLD SYSTEM OLD SYSTEM OLD SYSTEM OLD SYSTEM
+
+Version 0.9.9.3
+-
+
+
+
+

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Level
+  - Solid
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - PixelEffectsBack
+  - PixelEffectsFront
+  - Level
+  - Game
+  - Skybox
+  - LevelEditor
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3846479333
+    locked: 0
+  - name: Back VFX
+    uniqueID: 3133962891
+    locked: 0
+  - name: Level
+    uniqueID: 71740691
+    locked: 0
+  - name: Game
+    uniqueID: 1121172565
+    locked: 0
+  - name: Front VFX
+    uniqueID: 4479917
+    locked: 0
+  - name: Foreground
+    uniqueID: 783499467
+    locked: 0

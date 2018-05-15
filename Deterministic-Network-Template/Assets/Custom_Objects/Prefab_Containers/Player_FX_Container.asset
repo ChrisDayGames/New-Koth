@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae0b3bdc8859444c8439870af14704c, type: 3}
+  m_Name: Player_FX_Container
+  m_EditorClassIdentifier: 
+  prefabs:
+  - groupID: Stun_FX
+    positionOffset: {x: 0, y: 1, z: 0}
+    prefab: {fileID: 1267292205728132, guid: f31894c23a408074cbc0ea6ac559e01a, type: 2}
+    startActive: 0
+  - groupID: Fast_Fall_FX
+    positionOffset: {x: 0, y: 0, z: 0}
+    prefab: {fileID: 1821183698545670, guid: af01f3e355e40413699a3b592944d520, type: 2}
+    startActive: 0
+  - groupID: Soul
+    positionOffset: {x: 0, y: 0, z: 0}
+    prefab: {fileID: 1549073241078198, guid: 975d02a4aa6abd448a1a1908c8417200, type: 2}
+    startActive: 0
