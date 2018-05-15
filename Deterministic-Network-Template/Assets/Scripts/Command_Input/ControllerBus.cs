@@ -71,7 +71,7 @@ namespace CommandInput{
 			AddController (currentPlayers, args.controllerId);
 			Debug.Log("A controller was connected! Name = " + args.name + " Id = " + args.controllerId + " Type = " + args.controllerType);
 
-			AssignJoystickToNextOpenPlayer(ReInput.controllers.GetJoystick(args.controllerId));
+			//AssignJoystickToNextOpenPlayer(ReInput.controllers.GetJoystick(args.controllerId));
 
 		}
 
