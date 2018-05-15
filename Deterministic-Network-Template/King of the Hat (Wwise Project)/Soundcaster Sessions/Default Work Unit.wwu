@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3352F4EC-9B1E-4B69-9821-C42C88C8A425}" SchemaVersion="85">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{3352F4EC-9B1E-4B69-9821-C42C88C8A425}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3352F4EC-9B1E-4B69-9821-C42C88C8A425}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main" ID="{44224C08-2E8A-421C-B2FD-20AF924EC939}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Dash" ID="{30BE9706-0590-407C-A0FC-24BCC40E3F92}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BirthdayDeath" ID="{F6C87928-CCE5-4B47-B816-7F0E381F1283}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Fastfall" ID="{07A7C2DC-AF9E-40C2-A407-75414C589FFA}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BirthdayJump" ID="{8139ABAA-8E1C-42F9-90D6-8711CA158545}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{ED3F83DB-E7BA-4B17-BFBD-08A43A4FC907}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Birthday_HatThrow" ID="{AC73C6BA-0A8E-4492-AF4C-E3C81C18794C}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footstool" ID="{9ED48EE8-14D0-4104-8F56-DAB9471B40B4}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="BirthdayWin" ID="{B2AFEC39-6948-44E8-B2B0-3B8ACAC8B2B6}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Land" ID="{B9364ECB-6C76-4C64-8EEC-A10B037473CF}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Wallride" ID="{73F5501D-0FF0-44B9-BE6A-6AD072EF48AB}" WorkUnitID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

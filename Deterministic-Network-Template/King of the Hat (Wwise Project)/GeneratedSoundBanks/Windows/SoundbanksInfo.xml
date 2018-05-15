@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,20 +21,56 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4231158770" Name="BirthdayDash" ObjectPath="\Events\Default Work Unit\BirthdayDash"/>
-				<Event Id="716984660" Name="BirthdayDeath" ObjectPath="\Events\Default Work Unit\BirthdayDeath"/>
-				<Event Id="3526102023" Name="BirthdayFastfall" ObjectPath="\Events\Default Work Unit\BirthdayFastfall"/>
-				<Event Id="2173388079" Name="BirthdayFootsteps" ObjectPath="\Events\Default Work Unit\BirthdayFootsteps"/>
-				<Event Id="2558287723" Name="BirthdayFootstool" ObjectPath="\Events\Default Work Unit\BirthdayFootstool"/>
-				<Event Id="1992502354" Name="BirthdayJump" ObjectPath="\Events\Default Work Unit\BirthdayJump"/>
-				<Event Id="2046654741" Name="BirthdayLand" ObjectPath="\Events\Default Work Unit\BirthdayLand"/>
-				<Event Id="445595402" Name="BirthdayThrow" ObjectPath="\Events\Default Work Unit\BirthdayThrow"/>
-				<Event Id="3067127960" Name="BirthdayWin" ObjectPath="\Events\Default Work Unit\BirthdayWin"/>
+				<Event Id="871002828" Name="Birthday_HatThrow" ObjectPath="\Events\Default Work Unit\Specific\Birthday\Birthday_HatThrow"/>
+				<Event Id="716984660" Name="BirthdayDeath" ObjectPath="\Events\Default Work Unit\Specific\Birthday\BirthdayDeath"/>
+				<Event Id="1992502354" Name="BirthdayJump" ObjectPath="\Events\Default Work Unit\Specific\Birthday\BirthdayJump"/>
+				<Event Id="3067127960" Name="BirthdayWin" ObjectPath="\Events\Default Work Unit\Specific\Birthday\BirthdayWin" MaxAttenuation="0.000000"/>
+				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\General\Dash"/>
+				<Event Id="534702089" Name="Extinguish" ObjectPath="\Events\Default Work Unit\General\Extinguish" MaxAttenuation="0.000000"/>
+				<Event Id="3857355556" Name="Fastfall" ObjectPath="\Events\Default Work Unit\General\Fastfall"/>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\General\Footsteps"/>
+				<Event Id="2669862114" Name="Footstool" ObjectPath="\Events\Default Work Unit\General\Footstool"/>
+				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\General\Hit" MaxAttenuation="0.000000"/>
+				<Event Id="674522502" Name="Land" ObjectPath="\Events\Default Work Unit\General\Land"/>
+				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\General\Pickup" MaxAttenuation="0.000000"/>
+				<Event Id="2754516227" Name="Wallride" ObjectPath="\Events\Default Work Unit\General\Wallride"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="905943468" Language="SFX">
-					<ShortName>12.wav</ShortName>
-					<Path>SFX\12_9384330C.wem</Path>
+				<File Id="142752072" Language="SFX">
+					<ShortName>[Flinthook] Footstep1.wav</ShortName>
+					<Path>SFX\[Flinthook] Footstep1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="192256100" Language="SFX">
+					<ShortName>[Flinthook] Land1.wav</ShortName>
+					<Path>SFX\[Flinthook] Land1_23862461.wem</Path>
+				</File>
+				<File Id="447533716" Language="SFX">
+					<ShortName>[N++] Wallslide.wav</ShortName>
+					<Path>SFX\[N++] Wallslide_F17FB28C.wem</Path>
+				</File>
+				<File Id="603019387" Language="SFX">
+					<ShortName>Party blowers (02E6FBB-WSB).wav</ShortName>
+					<Path>SFX\Party blowers (02E6FBB-WSB)_DBA7F7D9.wem</Path>
+				</File>
+				<File Id="745168003" Language="SFX">
+					<ShortName>BT SYNTH Whoosh FlyBy.wav</ShortName>
+					<Path>SFX\BT SYNTH Whoosh FlyBy_1CF5C98F.wem</Path>
+				</File>
+				<File Id="767393716" Language="SFX">
+					<ShortName>BANK_01_INSTR_0000_SND_0016.wav</ShortName>
+					<Path>SFX\BANK_01_INSTR_0000_SND_0016_1C9C67B2.wem</Path>
+				</File>
+				<File Id="956219869" Language="SFX">
+					<ShortName>BANK_01_INSTR_0000_SND_0029.wav</ShortName>
+					<Path>SFX\BANK_01_INSTR_0000_SND_0029_8E14E9D0.wem</Path>
+				</File>
+				<File Id="1020028160" Language="SFX">
+					<ShortName>BT PLOP Bottle Tonal High.wav</ShortName>
+					<Path>SFX\BT PLOP Bottle Tonal High_5AFE247E.wem</Path>
+				</File>
+				<File Id="1053817986" Language="SFX">
+					<ShortName>BT SQUEAK Duck Single.wav</ShortName>
+					<Path>SFX\BT SQUEAK Duck Single_89574654.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -1,49 +1,91 @@
-﻿using Determinism;
+﻿using System;
+using Determinism;
 using Entitas;
 using UnityEngine;
 
 namespace CommandInput {
 
-	public class HatAudioCommand : AudioFXCommand {
+    public static class HatSounds {
 
-		public HatAudioCommand (int _e, string _name, GameObject _go) 
-			: base(_e, _name, _go) {
+        public const string THROW_SOUND = "Throw";
+        public const string HIT_SOUND = "Hit";
+        public const string DEATH_SOUND = "Death";
+        public const string PICKUP_SOUND = "Pickup";
+        public const string EXTINGUISH_SOUND = "Extinguish";
 
-			priority = (int) Priority.VERY_SLOW;
 
-		}
 
-		public override void Execute () {
+    }
 
-			//get a reference to the entity
-			LogicEntity e = Contexts.sharedInstance.logic.GetEntityWithId(entityID);
+    public class HatAudioCommand : AudioFXCommand {
 
-			if (e.isDangerous) {
+        private OnBeginFXModule attachFX;
+        private OnBeginFXModule hitFX;
+        private OnBeginFXModule throwFX;
+        private OnBeginFXModule hatDeathFX;
 
-				//Entity is Dangerous
+        private OnRepeatFXModule groundFX;
+        private OnRepeatFXModule airFX;
 
-			}
+        private OnEndFXModule endDangerousFX;
 
-			if (e.isAttached) {
+        public HatAudioCommand(int _e, string _name, GameObject _go)
+            : base(_e, _name, _go) {
 
-				//Entity is Attached
+            attachFX = new OnBeginFXModule(PickUpFX);
+            hitFX = new OnBeginFXModule(HitFX);
+            throwFX = new OnBeginFXModule(ThrowFX);
+            hatDeathFX = new OnBeginFXModule(HatDeathFX);
 
-			}
 
-			if (e.collisionInfo.value.CollidesWithHorizontal (Tag.PLAYER)) {
+            endDangerousFX = new OnEndFXModule(DangerOverFX);
 
-				//Collides with Player on X axis
+            priority = (int)Priority.VERY_SLOW;
 
-			}
+        }
 
-			if (e.collisionInfo.value.CollidesWithVertical (Tag.PLAYER)) {
+        private void DangerOverFX(LogicEntity obj) {
+            AudioManager.singleton.PostWwiseEvent(HatSounds.EXTINGUISH_SOUND, go);
 
-				//Collides with Player on Y axis
+        }
 
-			}
 
-		}
 
-	}
+        private void HatDeathFX(LogicEntity obj) {
+            AudioManager.singleton.PostWwiseEvent(HatSounds.DEATH_SOUND, go);
+
+        }
+
+        private void ThrowFX(LogicEntity obj) {
+            AudioManager.singleton.PostWwiseEvent(name + HatSounds.THROW_SOUND, go);
+        }
+
+        private void HitFX(LogicEntity obj) {
+            AudioManager.singleton.PostWwiseEvent(HatSounds.HIT_SOUND, go);
+
+        }
+
+        private void PickUpFX(LogicEntity obj) {
+            AudioManager.singleton.PostWwiseEvent(HatSounds.PICKUP_SOUND, go);
+        }
+
+        public override void Execute() {
+
+            LogicEntity e = Contexts.sharedInstance.logic.GetEntityWithId(entityID);
+
+            hatDeathFX.Update(e.isDead, e);
+
+            if (e.isDead || e.hasFreeze) return;
+
+            attachFX.Update(e.isAttached, e);
+            hitFX.Update(!e.collisionInfo.value.DoesntCollide(), e);
+            throwFX.Update(e.isDangerous && !e.isAttached, e);
+
+
+            endDangerousFX.Update(e.isDangerous, e);
+
+        }
+
+    }
 
 }
