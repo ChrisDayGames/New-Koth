@@ -10,9 +10,6 @@ Wwise bank doesn't load
 //Chris
 
 
-Put a particle in front of the hat when it is sliding on the ground
-
-
 
 //Soc
 If you jump directly next to someone, it turns you around (probably wall riding on them?)
@@ -106,6 +103,7 @@ Menus
 ==============
 
 Everything gets fucked if screens are off
+CursorBehaviour Null Reference (be on Victory Menu)
 
 ==============
 Tools

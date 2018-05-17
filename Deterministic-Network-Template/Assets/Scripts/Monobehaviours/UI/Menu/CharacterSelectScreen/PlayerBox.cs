@@ -60,8 +60,9 @@ public class PlayerBox : InputEventPlanner, IGeneratable {
         }
 
         if (!hasMadeSelection && cursor.currentTarget != null) {
+            if (cursor.currentTarget.GetComponent<CharacterBox>() == null) return;
 
-			Characters currentCharacter = cursor.currentTarget.GetComponent <CharacterBox> ().character;
+            Characters currentCharacter = cursor.currentTarget.GetComponent <CharacterBox> ().character;
 
 			currentSelectionDisplay.sprite = Assets.Get (currentCharacter).uiInfo.bigSprite;
 			currentSelectionDisplay.color = new Color (1f, 1f, 1f, 0.5f);
@@ -141,7 +142,8 @@ public class PlayerBox : InputEventPlanner, IGeneratable {
 	}
 
     void SelectCharacter() {
-        Debug.Log(cursor.currentTarget.name);
+
+        if (cursor.currentTarget.GetComponent<CharacterBox>() == null) return;
         currentCharacter = cursor.currentTarget.GetComponent<CharacterBox>().character;
 		CharacterBlueprint blueprint = Assets.Get (currentCharacter);
 

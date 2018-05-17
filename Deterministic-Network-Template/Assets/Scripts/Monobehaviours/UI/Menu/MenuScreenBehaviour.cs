@@ -21,7 +21,7 @@ public class MenuScreenBehaviour : MonoBehaviour, IMenuStateListener {
 		//add the appropriate listeners
 		e.AddMenuStateListener (this);
 
-		OnMenuState (e, MenuState.INTRO);
+		OnMenuState (e, MenuState.VICTORY);
 	}
 
 	public void OnMenuState (MetaEntity e, MenuState state) {
