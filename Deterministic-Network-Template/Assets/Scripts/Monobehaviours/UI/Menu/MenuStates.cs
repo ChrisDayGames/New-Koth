@@ -11,6 +11,6 @@
 	OPTIONS,
 	PAUSE,
 	REPLAY,
-	END
+	VICTORY
 
 }

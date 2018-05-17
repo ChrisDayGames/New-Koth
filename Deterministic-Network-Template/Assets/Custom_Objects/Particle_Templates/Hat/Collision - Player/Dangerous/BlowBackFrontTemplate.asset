@@ -16,14 +16,14 @@ MonoBehaviour:
   emitParams:
     enabled: 1
     positionOffset: {x: 0, y: 0, z: 0}
-    velocity: {x: -2.0179684, y: 4.574692, z: 0}
+    velocity: {x: 4.3443556, y: 2.475192, z: 0}
     velocityMultiplier: {x: 1, y: 1, z: 1}
     rotationOffset: 90
     rotation3DOffset: {x: 0, y: 0, z: 0}
-    position: {x: 23.158127, y: -8.427032, z: 0}
+    position: {x: 12.436691, y: -20.427216, z: 0}
     rotation: 0
-    rotation3D: {x: 0, y: 0, z: -23.803032}
-    startSize: 10
+    rotation3D: {x: 0, y: 0, z: 60.32772}
+    startSize: 0
     startSize3D: {x: 0, y: 0, z: 0}
     startLifetime: 0.35
     startColor: {r: 1, g: 1, b: 1, a: 1}
