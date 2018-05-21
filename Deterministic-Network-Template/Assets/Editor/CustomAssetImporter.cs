@@ -57,17 +57,24 @@ internal sealed class CustomAssetImporter : AssetPostprocessor {
 		importer.mipmapEnabled = false;
 		importer.filterMode = FilterMode.Point;
 
-		if (fileName.Contains("cha")) {
+		if (fileName.StartsWith("cha")) {
 
 			importer.spriteImportMode = SpriteImportMode.Multiple;
 			importer.spritePixelsPerUnit = 24;
+			importer.isReadable = true;
 
-		} else if (fileName.Contains("hat")) {
+		} else if (fileName.StartsWith( "hat")) {
 
 			importer.spriteImportMode = SpriteImportMode.Single;
 			importer.spritePixelsPerUnit = 24;
-			
-		} else {
+			importer.isReadable = true;
+
+		} else if (fileName.StartsWith( "col")) {
+			importer.spriteImportMode = SpriteImportMode.Single;
+			importer.spritePixelsPerUnit = 16;
+			importer.isReadable = true;
+		}
+		else {
 
 			//sprite settings
 			importer.spriteImportMode = SpriteImportMode.Single;

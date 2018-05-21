@@ -2,67 +2,80 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Skin {
-		
-	public AnimatorOverrideController altPlayer;
-	public Sprite altHat;
-
-	public AlternateColor[] altColors;
-	
-}
-
-[System.Serializable]
-public class AlternateColor {
-
-	public ColorSwap[] hatPalette;
-	public ColorSwap[] playerPalette;
-
-}
-
+[RequireComponent( typeof( DynamicPalette ) )]
 public class CharacterColorChanger : MonoBehaviour {
 
-	public int skindex = 0;
-	public int colorIndex = 0;
+	[SerializeField]
+	private DynamicPalette dynamicPalette;
 
-	public DynamicPalette hatPalette;
-	public DynamicPalette playerPalette;
-
-	public Animator currentBodySkin;
-	public SpriteRenderer currentHatSkin;
-
-	public Skin[] alternateSkins;
-
-	public void ChangeSkin () {
-
-		currentHatSkin.sprite = alternateSkins[skindex].altHat;
-		currentBodySkin.runtimeAnimatorController = alternateSkins[skindex].altPlayer;
-
-		ChangeItemPalette (hatPalette, alternateSkins[skindex].altColors[colorIndex].hatPalette);
-		ChangeItemPalette (playerPalette, alternateSkins[skindex].altColors[colorIndex].playerPalette);
-
+	private void Reset ()
+	{
+		dynamicPalette = GetComponent<DynamicPalette>();
 	}
 
-	public void ChangeItemPalette (DynamicPalette item, ColorSwap[] palette) {
+	[SerializeField]
+	[HideInInspector]
+	private List<ColorSwap> colorsToSwap;
 
-		item.colorsToSwap = palette;
-		item.ChangeColor ();
+	private IColors original, desired;
 
+	private void Awake ()
+	{
+		colorsToSwap = new List<ColorSwap>( 32 );
 	}
 
-	public void Init (int _skindex, int _colorIndex) {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <param name="original">Typically a <see cref="Skin"/>.</param>
+	/// <param name="desired">Typically a <see cref="ColorScheme"/>.</param>
+	public void SetColors ( IColors original, IColors desired )
+	{
+		if ( original.Length != desired.Length )
+		{
+			throw new System.ArgumentException( "Mismatched original/desired, lengths do not match." );
+		}
 
-		//print  (_skindex + " || " + _colorIndex);
+		// Unregister from the previous scheme
+		if ( this.desired != null )
+		{
+			this.desired.OnModified -= HandleModified;
+		}
 
-		skindex = _skindex;
-		colorIndex = _colorIndex;
+		this.original = original;
+		this.desired = desired;
 
-		hatPalette.Init ();
-		playerPalette.Init ();
+		// Register with the new scheme
+		if ( this.desired != null )
+		{
+			this.desired.OnModified += HandleModified;
+		}
 
-		ChangeSkin ();
+		// Build an array of ColorSwaps that will map the r values
+		// from the original colors to the desired colors
 
+		colorsToSwap.Clear();
+
+		for ( int i = 0; i < original.Length; i++ )
+		{
+			colorsToSwap.Add( new ColorSwap { rValue = original[i].r, swapColor = desired[i] } );
+		}
+
+		SetColorsInternal();
 	}
 
+	private void HandleModified ()
+	{
+		for ( int i = 0; i < desired.Length; i++ )
+		{
+			colorsToSwap[i] = colorsToSwap[i].SetSwapColor( desired[i] );
+		}
+	}
 
+	private void SetColorsInternal ()
+	{
+		// Actually change the colors
+		dynamicPalette.ColorsToSwap = colorsToSwap;
+		dynamicPalette.ChangeColor();
+	}
 }

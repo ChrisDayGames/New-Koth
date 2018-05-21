@@ -13,6 +13,7 @@ public class CharacterUIBlueprint {
     public Sprite bigSprite;
     public Sprite logo;
 
+	public HatAndBodySkins[] skins = new HatAndBodySkins[0];
 }
 
 [CreateAssetMenu]
