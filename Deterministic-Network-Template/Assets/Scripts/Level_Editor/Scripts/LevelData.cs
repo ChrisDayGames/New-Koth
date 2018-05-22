@@ -1,12 +1,15 @@
 ﻿using Determinism;
+using Persistence;
 
 [System.Serializable]
 public class LevelData : ISaveable{
 
-	public const string DIRECTORY = "/Resources/Levels";
+	public const string DIRECTORY = "Levels/";
+	public const string EXTENSION = ".lvl";
 
-	public string name {get; private set;}
-	public string path {get { return DIRECTORY + name; }}
+	public string name {get; set;}
+	public string path {get { return DIRECTORY + name + extension; }}
+	public string extension { get { return EXTENSION; } }
 
 	//environment type --> might not be ideal what if just want to create a mesh
 	public Environments environment;
@@ -36,14 +39,14 @@ public class LevelData : ISaveable{
 
 	public LevelData () {
 
-		this.name = "";
-		this.width = 10;
-		this.height = 10;
-		this.tileWidth = 1;
-		this.tileHeight = 1;
-		this.tiles = new int[width * height];
-		this.pixelsPerTile = 16;
-		this.environment = Environments.GRASS;
+//		this.name = "";
+//		this.width = 10;
+//		this.height = 10;
+//		this.tileWidth = 1;
+//		this.tileHeight = 1;
+//		this.tiles = new int[width * height];
+//		this.pixelsPerTile = 16;
+//		this.environment = Environments.GRASS;
 
 	}
 
@@ -60,7 +63,10 @@ public class LevelData : ISaveable{
 		this.tiles = new int[this.width * this.height];
 
 		for (int i = 0; i < this.tiles.Length; i++) {
+
 			this.tiles[i] = _tiles [i];
+			UnityEngine.Debug.Log (tiles[i]);
+		
 		}
 
 		minX = 0;

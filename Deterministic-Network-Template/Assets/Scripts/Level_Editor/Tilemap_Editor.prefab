@@ -60,6 +60,6 @@ MonoBehaviour:
   mapSize: {x: 10, y: 10}
   tileSize: {x: 1, y: 1}
   pixelsPerTile: 16
-  numPlayers: 0
+  numPlayers: 1
   spawnPointPrefab: {fileID: 0}
   levelBoundPrefab: {fileID: 0}
