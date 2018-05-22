@@ -145,6 +145,7 @@ public class CharacterBlueprint : ScriptableObject {
 
 	public void OnValidate () {
 
+		return;
 		if (Application.isPlaying) return;
 
 		GetPlayerCollider ();

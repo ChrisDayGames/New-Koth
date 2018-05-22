@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public enum Characters : int {
+public enum Characters : byte {
 
 	BIRTHDAY,
 	KIARA,
@@ -18,17 +18,14 @@ public enum Characters : int {
 	RANDOM
 
 }
-
-
-
-
-public enum Levels : int {
+	
+public enum Levels : byte {
 
 	HATLANDIAN_HILLS,
 
 }
 
-public enum Environments : int {
+public enum Environments : byte {
 
 	GRASS,
 	ICE,
@@ -42,8 +39,6 @@ public enum Environments : int {
 public static class Assets {
 
 	public const string LEVEL_DIRECTORY = "/Resources/Levels/";
-
-
 
 	private static Dictionary <Characters, CharacterBlueprint> allCharacters = new Dictionary <Characters, CharacterBlueprint> () {
 		

@@ -4,6 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerBox : InputEventPlanner, IGeneratable {
+	#region IGeneratable implementation
+	public void Generate (int i)
+	{
+		throw new System.NotImplementedException ();
+	}
+	public int GetMaxObjects ()
+	{
+		throw new System.NotImplementedException ();
+	}
+	public MonoBehaviour GetScript ()
+	{
+		throw new System.NotImplementedException ();
+	}
+	public Transform GetTransform ()
+	{
+		throw new System.NotImplementedException ();
+	}
+	#endregion
 
     public static PlayerBox[] playerBoxes = new PlayerBox[GameConstants.MAX_PLAYERS];
 
@@ -196,21 +214,5 @@ public class PlayerBox : InputEventPlanner, IGeneratable {
 	}
 	#endif
 
-	//IGeneratable Interface
-	public void Generate (int i) {
-		playerId = i;
-	}
-
-	public int GetMaxObjects () {
-		return GameConstants.MAX_PLAYERS;
-	}
-
-	public MonoBehaviour GetScript () {
-		return this;
-	}
-
-	public Transform GetTransform () {
-		return transform;
-	}
 
 }

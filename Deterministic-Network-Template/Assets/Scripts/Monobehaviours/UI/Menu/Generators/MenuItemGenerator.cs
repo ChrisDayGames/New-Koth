@@ -29,14 +29,14 @@ public class MenuItemGenerator : MonoBehaviour {
 	protected virtual void GenerateObjects () {
 		
 		if (mono == null) return;
-		prototype = (IGeneratable) mono;
+		prototype = mono as IGeneratable;
 
 		DestroyObjects ();
 		for (int i = 0; i < objectsToSpawn; i++) {
 
 			IGeneratable obj = (IGeneratable) Instantiate <MonoBehaviour> (prototype.GetScript ());
 			obj.Generate (i);
-			obj.GetTransform ().parent = this.transform;
+			obj.GetTransform ().SetParent (this.transform, false);
 			obj.GetTransform ().localScale = Vector3.one;
 
 		}
@@ -72,6 +72,12 @@ public class MenuItemGenerator : MonoBehaviour {
 
 		if (Application.isPlaying) return;
 		if (mono != null) return;
+		LookForGeneratables ();
+
+	}
+
+	void Reset () {
+
 		LookForGeneratables ();
 
 	}

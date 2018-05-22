@@ -17,7 +17,8 @@ public class FogObject : MonoBehaviour {
 
 	void OnValidate () {
 
-		rend = GetComponent <Renderer> ();
+		if (rend == null)
+			rend = GetComponent <Renderer> ();
 
 	}
 
