@@ -2,7 +2,6 @@
 using Determinism;
 using Entitas;
 using UnityEngine;
-using Persistence;
 
 public class CreatePlayerSystem : ReactiveSystem <InputEntity>, IInitializeSystem {
 
@@ -43,7 +42,7 @@ public class CreatePlayerSystem : ReactiveSystem <InputEntity>, IInitializeSyste
 
 		//Debug.Log ( System.IO.Directory.GetFiles(Application.dataPath + LevelData.DIRECTORY)[0]);
 
-		CreateLevel (SaveLoad.LoadAll <LevelData> (SaveLoad.EDITOR_ROOT + LevelData.DIRECTORY, LevelData.EXTENSION, false)[0]);
+		CreateLevel (SaveLoad.Load <LevelData> (System.IO.Directory.GetFiles(Application.dataPath + LevelData.DIRECTORY)[0]));
 
 	}
 

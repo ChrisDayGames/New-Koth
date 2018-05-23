@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Determinism;
-using Persistence;
 
 namespace LevelEditor {
 
@@ -33,8 +32,6 @@ namespace LevelEditor {
 	}
 
 	public class MapEditor : MonoBehaviour {
-
-		public string levelName;
 
 		public static MapEditor instance;
 
@@ -682,10 +679,8 @@ namespace LevelEditor {
 			for (int i = 0; i < numPlayers; i++) {
 				saveData.spawnPositions[i] = new FixedVector2 (spawnPoints[i].transform.position);
 			}
-
-			saveData.name = levelName;
 							
-			SaveLoad.Save (saveData);
+			SaveLoad.Save (saveData, Assets.LEVEL_DIRECTORY);
 			Debug.Log ("Saved Successfully");
 
 
@@ -720,14 +715,15 @@ namespace LevelEditor {
 
 		public void LoadLevel () {
 
-			LevelData saveData = SaveLoad.LoadAll <LevelData> (LevelData.DIRECTORY, LevelData.EXTENSION)[0];
+
+			LevelData saveData = SaveLoad.Load <LevelData> (Assets.LEVEL_DIRECTORY + System.IO.Directory.GetFiles(Assets.LEVEL_DIRECTORY)[0]);
+
 			map = new TileGrid (saveData);
+			shouldGenerateMesh = true;
 
 			SetLevelBounds (saveData.minX, saveData.maxX, saveData.minY, saveData.maxY);
 			SetSpawnPoints (saveData.spawnPositions);
 			Debug.Log ("Loaded Successfully");
-
-			shouldGenerateMesh = true;
 
 		}
 

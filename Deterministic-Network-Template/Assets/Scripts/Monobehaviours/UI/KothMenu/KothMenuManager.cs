@@ -4,9 +4,7 @@ public class KothMenuManager : BaseBehaviour {
 
 	public static KothMenuManager instance;
 
-	[System.NonSerialized]
 	public KothCursor[] cursors = new KothCursor[GameConstants.MAX_PLAYERS];
-	[System.NonSerialized]
 	public KothPlayerSelection[] playerSelections = new KothPlayerSelection[GameConstants.MAX_PLAYERS];
 
 	void Awake () {
@@ -27,8 +25,12 @@ public class KothMenuManager : BaseBehaviour {
 		int colorIndex = 0;
 
 		playerSelections[playerIndex].Character = character;
-		playerSelections[playerIndex].SkinIndex = skinIndex;
-		playerSelections[playerIndex].ColorIndex = colorIndex;
+
+	}
+
+	public void ConfirmSelection (int playerIndex, bool hasConfirmed) {
+
+		playerSelections[playerIndex].IsConfirmed = hasConfirmed;
 
 	}
 
