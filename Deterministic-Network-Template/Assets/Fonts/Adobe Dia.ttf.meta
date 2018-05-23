@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d96f913778d1c404a90a17ac73fedd9b
+timeCreated: 1527017862
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Levi Adobe Dia
+  fontNames:
+  - Levi Adobe Dia
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
