@@ -1,14 +1,28 @@
 Event	ID	Name			Wwise Object Path	Notes
-	445595402	BirthdayThrow			\Default Work Unit\BirthdayThrow	
-	716984660	BirthdayDeath			\Default Work Unit\BirthdayDeath	
-	1992502354	BirthdayJump			\Default Work Unit\BirthdayJump	
-	2046654741	BirthdayLand			\Default Work Unit\BirthdayLand	
-	2173388079	BirthdayFootsteps			\Default Work Unit\BirthdayFootsteps	
-	2558287723	BirthdayFootstool			\Default Work Unit\BirthdayFootstool	
-	3067127960	BirthdayWin			\Default Work Unit\BirthdayWin	
-	3526102023	BirthdayFastfall			\Default Work Unit\BirthdayFastfall	
-	4231158770	BirthdayDash			\Default Work Unit\BirthdayDash	
+	534702089	Extinguish			\Default Work Unit\General\Extinguish	
+	674522502	Land			\Default Work Unit\General\Land	
+	716984660	BirthdayDeath			\Default Work Unit\Specific\Birthday\BirthdayDeath	
+	871002828	Birthday_HatThrow			\Default Work Unit\Specific\Birthday\Birthday_HatThrow	
+	1942692385	Dash			\Default Work Unit\General\Dash	
+	1992502354	BirthdayJump			\Default Work Unit\Specific\Birthday\BirthdayJump	
+	2385628198	Footsteps			\Default Work Unit\General\Footsteps	
+	2669862114	Footstool			\Default Work Unit\General\Footstool	
+	2754516227	Wallride			\Default Work Unit\General\Wallride	
+	3067127960	BirthdayWin			\Default Work Unit\Specific\Birthday\BirthdayWin	
+	3831688773	PlayerHit			\Default Work Unit\General\PlayerHit	
+	3857355556	Fastfall			\Default Work Unit\General\Fastfall	
+	3978245845	Pickup			\Default Work Unit\General\Pickup	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	905943468	12	C:\Users\Ben\Documents\GitHub\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\12_9384330C.wem		\Actor-Mixer Hierarchy\Default Work Unit\12		16492
+	79572315	BANK_00_INSTR_0000_SND_001D	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BANK_00_INSTR_0000_SND_001D_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Hit\Hit (General)\Blended Hit (General)\BANK_00_INSTR_0000_SND_001D		8096
+	142752072	[Flinthook] Footstep1	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\[Flinthook] Footstep1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Footsteps\Footsteps (General)\[Flinthook] Footstep1		43072
+	192256100	[Flinthook] Land1	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\[Flinthook] Land1_23862461.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Land\[Flinthook] Land1		126544
+	389540621	BT WHOOSH Belt	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BT WHOOSH Belt_50B85614.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Hit\Hit (General)\Blended Hit (General)\Hits (General)\BT WHOOSH Belt		139564
+	447533716	[N++] Wallslide	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\[N++] Wallslide_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Wallride\Wallride (General)\[N++] Wallslide		1055192
+	603019387	Party blowers (02E6FBB-WSB)	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\Party blowers (02E6FBB-WSB)_DBA7F7D9.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSpecific\Birthday\Death\Death (Birthday)\Party blowers (02E6FBB-WSB)		173856
+	745168003	BT SYNTH Whoosh FlyBy	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BT SYNTH Whoosh FlyBy_1CF5C98F.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Fastfall\BT SYNTH Whoosh FlyBy		19632
+	767393716	BANK_01_INSTR_0000_SND_0016	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BANK_01_INSTR_0000_SND_0016_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Dash\Dash (General)\BANK_01_INSTR_0000_SND_0016		12032
+	956219869	BANK_01_INSTR_0000_SND_0029	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BANK_01_INSTR_0000_SND_0029_8E14E9D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSpecific\Birthday\Jump\Jump (Birthday)\BANK_01_INSTR_0000_SND_0029		1634
+	1020028160	BT PLOP Bottle Tonal High	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BT PLOP Bottle Tonal High_5AFE247E.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerSpecific\Birthday\Throw\Throw (Birthday)\BT PLOP Bottle Tonal High		197312
+	1053817986	BT SQUEAK Duck Single	C:\Users\Ben\Documents\GitHub\New-Koth\Deterministic-Network-Template\King of the Hat (Wwise Project)\.cache\Windows\SFX\BT SQUEAK Duck Single_89574654.wem		\Actor-Mixer Hierarchy\Default Work Unit\General\Footstool\Footstool (General)\BT SQUEAK Duck Single		67252
 

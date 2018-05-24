@@ -3,132 +3,178 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{D54A2CC7-11F2-43C4-8345-680DF97948B6}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="BirthdayJump" ID="{8139ABAA-8E1C-42F9-90D6-8711CA158545}">
+				<Folder Name="General" ID="{A6E6DD8E-97ED-48AF-9485-8A789F58E1CA}" ShortID="129332218">
 					<ChildrenList>
-						<Action Name="" ID="{986DC458-5F5F-46A9-A269-29D73EA584B9}" ShortID="297307851">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Footsteps" ID="{ED3F83DB-E7BA-4B17-BFBD-08A43A4FC907}">
+							<ChildrenList>
+								<Action Name="" ID="{4D56BDC8-1274-45E9-941C-C737861FEDF4}" ShortID="268758495">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps (General)" ID="{F6C17BF8-BDEA-465F-AB25-4818383E4443}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fastfall" ID="{07A7C2DC-AF9E-40C2-A407-75414C589FFA}">
+							<ChildrenList>
+								<Action Name="" ID="{DA150F6E-D0E1-4DDA-B187-366D06034ACA}" ShortID="688407644">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BT SYNTH Whoosh FlyBy" ID="{F6879245-C001-4C3E-866F-2CBC17157ED7}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Footstool" ID="{9ED48EE8-14D0-4104-8F56-DAB9471B40B4}">
+							<ChildrenList>
+								<Action Name="" ID="{3FC60748-26E7-4640-B9A8-02F841695F65}" ShortID="505111706">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footstool (General)" ID="{9B2C7846-CFE6-42B4-BC6C-7B116300339A}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Dash" ID="{30BE9706-0590-407C-A0FC-24BCC40E3F92}">
+							<ChildrenList>
+								<Action Name="" ID="{A8C86499-05D8-4C83-A38E-6E8011054BAC}" ShortID="990166885">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dash (General)" ID="{D1227AF2-5311-4C6D-BA62-DB2EAF69D65A}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Land" ID="{B9364ECB-6C76-4C64-8EEC-A10B037473CF}">
+							<ChildrenList>
+								<Action Name="" ID="{0DD0F318-9565-4DE9-9839-9585B08862FF}" ShortID="134918790">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="[N++] Wallslide" ID="{99EFAE22-5DF7-42A7-9EE2-BCBB24698005}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C036B42A-6089-40AA-A366-26AA37C1D789}" ShortID="298143895">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="[Flinthook] Land1" ID="{F9FA5D7D-76D4-41DC-B91A-DBF9075572CB}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Wallride" ID="{73F5501D-0FF0-44B9-BE6A-6AD072EF48AB}">
+							<ChildrenList>
+								<Action Name="" ID="{BC6566BF-747A-4DC0-A782-66CFA2325DE1}" ShortID="776964000">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wallride (General)" ID="{941F3776-23E7-46E9-B884-36241E995E40}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8F50462B-2F40-4089-8641-607F0D651A60}" ShortID="999649552">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wallride (General)" ID="{941F3776-23E7-46E9-B884-36241E995E40}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hit" ID="{607F2E7A-2706-4B7E-A757-3A39849DC6FB}"/>
+						<Event Name="Pickup" ID="{73A5CA0F-999B-482F-986A-69E7E37DD571}"/>
+						<Event Name="Extinguish" ID="{7207D3A5-2983-4E67-9C01-863B4E45DC3A}"/>
 					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayLand" ID="{31D5C17D-6377-4CB5-8ADE-6E5E3C8F2D94}">
+				</Folder>
+				<Folder Name="Specific" ID="{2FBF2404-6431-43DF-9198-F7EC179C73CB}" ShortID="381289930">
 					<ChildrenList>
-						<Action Name="" ID="{BA270FE7-FCAE-42F6-B714-4AA3C3127879}" ShortID="862475202">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Folder Name="Birthday" ID="{5AC44BC5-8323-4291-AC52-98ED92474762}" ShortID="391355958">
+							<ChildrenList>
+								<Event Name="Birthday_HatThrow" ID="{AC73C6BA-0A8E-4492-AF4C-E3C81C18794C}">
+									<ChildrenList>
+										<Action Name="" ID="{C83F4898-8C7C-4925-A061-288DBC9D4753}" ShortID="725019048">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Throw (Birthday)" ID="{EBEBA64F-70C2-4972-A054-FD7E240BBD51}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BirthdayJump" ID="{8139ABAA-8E1C-42F9-90D6-8711CA158545}">
+									<ChildrenList>
+										<Action Name="" ID="{A96EB75B-B5C1-4A81-8635-0499A2F7B9B5}" ShortID="285186986">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Jump (Birthday)" ID="{6036F49F-9177-492C-95DE-9AD1BD4C489E}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{586E2BB4-2278-4719-97FE-58754BE45E84}" ShortID="755492757">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Wallride (General)" ID="{941F3776-23E7-46E9-B884-36241E995E40}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BirthdayDeath" ID="{F6C87928-CCE5-4B47-B816-7F0E381F1283}">
+									<ChildrenList>
+										<Action Name="" ID="{D56E3BDB-D6EC-4532-95D0-A47B6F6CA466}" ShortID="581157585">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Death (Birthday)" ID="{696DC174-2F98-416A-B4B3-6C1A18935D52}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="BirthdayWin" ID="{B2AFEC39-6948-44E8-B2B0-3B8ACAC8B2B6}"/>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayThrow" ID="{AC73C6BA-0A8E-4492-AF4C-E3C81C18794C}">
-					<ChildrenList>
-						<Action Name="" ID="{61597A95-E80D-4996-99AA-5C80E440E197}" ShortID="693507929">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayDeath" ID="{F6C87928-CCE5-4B47-B816-7F0E381F1283}">
-					<ChildrenList>
-						<Action Name="" ID="{D56E3BDB-D6EC-4532-95D0-A47B6F6CA466}" ShortID="581157585">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayWin" ID="{B2AFEC39-6948-44E8-B2B0-3B8ACAC8B2B6}">
-					<ChildrenList>
-						<Action Name="" ID="{AA9E0F75-0E0F-4AC3-86D7-A3491620A1D7}" ShortID="922991905">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayFootsteps" ID="{ED3F83DB-E7BA-4B17-BFBD-08A43A4FC907}">
-					<ChildrenList>
-						<Action Name="" ID="{1EAFD7EF-950A-456D-A2AE-7EF7EEF3BA90}" ShortID="844151303">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayDash" ID="{30BE9706-0590-407C-A0FC-24BCC40E3F92}">
-					<ChildrenList>
-						<Action Name="" ID="{A8C86499-05D8-4C83-A38E-6E8011054BAC}" ShortID="990166885">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayFastfall" ID="{07A7C2DC-AF9E-40C2-A407-75414C589FFA}">
-					<ChildrenList>
-						<Action Name="" ID="{9611FA15-4464-4DA1-89A9-4025B935F6BC}" ShortID="835483119">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BirthdayFootstool" ID="{9ED48EE8-14D0-4104-8F56-DAB9471B40B4}">
-					<ChildrenList>
-						<Action Name="" ID="{E8D6DF34-523D-4878-AEE6-E42603AEAA56}" ShortID="466462410">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="12" ID="{D3340981-F6C6-47A3-882C-2BE149E14A36}" WorkUnitID="{FDEDBE99-61D6-4423-8CE0-47C0AA1CBEAB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

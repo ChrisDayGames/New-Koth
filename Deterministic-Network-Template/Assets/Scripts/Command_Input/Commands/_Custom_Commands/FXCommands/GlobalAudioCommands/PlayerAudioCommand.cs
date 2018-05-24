@@ -9,6 +9,7 @@ namespace CommandInput {
 
 		public const string JUMP_SOUND = "Jump";
         public const string WALLJUMP_SOUND = "Jump";
+        public const string WALLRIDE_SOUND = "Wallride";
         public const string LAND_SOUND = "Land";
         public const string THROW_SOUND = "Throw";
         public const string DEATH_SOUND = "Death";
@@ -98,14 +99,49 @@ namespace CommandInput {
 
         }
 
+        //GENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERAL
+        //GENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERAL
+        //GENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERALGENERAL
+
+
         private void OnBeginWallride(LogicEntity obj) {
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.JUMP_SOUND, go);
+            AudioManager.singleton.PostWwiseEvent(PlayerSounds.WALLRIDE_SOUND, go);
         }
 
         private void OnRepeatFootsteps(LogicEntity obj) {
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
+            AudioManager.singleton.PostWwiseEvent(PlayerSounds.FOOTSTEPS_SOUND, go);
 
         }
+
+        public void OnBeginLand(LogicEntity e) {
+
+            //Wise play sound (JUMP_SOUND + name)
+            AudioManager.singleton.PostWwiseEvent(PlayerSounds.LAND_SOUND, go);
+
+        }
+
+        private void OnBeginFootstool(LogicEntity obj) {
+
+            //Wise play sound (JUMP_SOUND + name)
+            AudioManager.singleton.PostWwiseEvent(PlayerSounds.FOOTSTOOL_SOUND, go);
+
+        }
+
+        private void OnBeginFastfall(LogicEntity obj) {
+
+            AudioManager.singleton.PostWwiseEvent(PlayerSounds.FASTFALL_SOUND, go);
+
+        }
+
+        private void OnBeginDash(LogicEntity obj) {
+            AudioManager.singleton.PostWwiseEvent(PlayerSounds.DASH_SOUND, go);
+
+        }
+
+        //SPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFIC
+        //SPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFIC
+        //SPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFICSPECIFIC
+
 
         public void OnBeginJump (LogicEntity e) {
 
@@ -121,43 +157,19 @@ namespace CommandInput {
 
         }
 
-        public void OnBeginLand (LogicEntity e) {
-
-            //Wise play sound (JUMP_SOUND + name)
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
-
-        }
-
-        private void OnBeginFootstool(LogicEntity obj) {
-
-            //Wise play sound (JUMP_SOUND + name)
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
-
-        }
-
-        private void OnBeginFastfall(LogicEntity obj) {
-
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
-
-        }
-
-        private void OnBeginDash(LogicEntity obj) {
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
-
-        }
 
         private void OnBeginWin(LogicEntity obj) {
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
+            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.WIN_SOUND, go);
 
         }
 
         private void OnBeginDeath(LogicEntity obj) {
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
+            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.DEATH_SOUND, go);
 
         }
 
         private void OnBeginThrow(LogicEntity obj) {
-            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.LAND_SOUND, go);
+            AudioManager.singleton.PostWwiseEvent(name + PlayerSounds.THROW_SOUND, go);
 
         }
 

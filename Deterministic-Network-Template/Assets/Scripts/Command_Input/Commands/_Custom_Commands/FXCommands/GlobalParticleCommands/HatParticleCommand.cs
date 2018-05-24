@@ -64,7 +64,7 @@ namespace CommandInput {
 
 		}
 
-		public void EmptyFunction (LogicEntity e) {
+		public void EmptyFunction (LogicEntity e) { 
 
 			//get required data from the entity
 
